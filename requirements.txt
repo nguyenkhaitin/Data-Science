@@ -1,0 +1,14 @@
+echo "streamlit
+streamlit-option-menu
+pandas
+numpy
+yfinance
+scipy
+statsmodels
+scikit-learn
+joblib
+tensorflow
+matplotlib
+seaborn
+plotly
+uuid" > requirements.txt
