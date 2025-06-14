@@ -1,14 +1,13 @@
-echo "streamlit
+streamlit
 streamlit-option-menu
 pandas
 numpy
 yfinance
+matplotlib
+seaborn
+plotly
 scipy
 statsmodels
 scikit-learn
 joblib
-tensorflow
-matplotlib
-seaborn
-plotly
-uuid" > requirements.txt
+tensorflow==2.12.0
