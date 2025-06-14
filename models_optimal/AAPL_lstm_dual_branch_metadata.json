@@ -1,0 +1,1 @@
+{"window_size": 20, "epochs": 20, "batch_size": 64, "features": ["close_lag1", "close_lag5", "close_lag10", "log_return"], "model_type": "Dual Branch"}

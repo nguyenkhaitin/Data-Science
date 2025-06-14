@@ -1,0 +1,2 @@
+Model,MAE_Train,RMSE_Train,MAPE_Train (%),MAE_Test,RMSE_Test,MAPE_Test (%)
+CRMM,2.13,3.08,7.43,10.72,15.09,5.04

@@ -1,0 +1,2 @@
+Model,MAE_Train,RMSE_Train,MAPE_Train (%),MAE_Test,RMSE_Test,MAPE_Test (%)
+CRM,6.68,10.05,11.28,67.55,76.6,29.46

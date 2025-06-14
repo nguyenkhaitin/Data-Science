@@ -1,0 +1,2 @@
+Model,MAE_Train,RMSE_Train,MAPE_Train (%),MAE_Test,RMSE_Test,MAPE_Test (%)
+OTIS,14.92,15.84,18.57,12.92,13.17,17.46

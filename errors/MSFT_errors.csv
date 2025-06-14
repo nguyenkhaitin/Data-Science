@@ -1,0 +1,2 @@
+Model,MAE_Train,RMSE_Train,MAPE_Train (%),MAE_Test,RMSE_Test,MAPE_Test (%)
+MSFT,0.81,1.23,2.47,50.42,59.73,19.31

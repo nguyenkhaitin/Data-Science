@@ -1,0 +1,2 @@
+Model,MAE_Train,RMSE_Train,MAPE_Train (%),MAE_Test,RMSE_Test,MAPE_Test (%)
+KMI,1.52,2.03,7.23,0.71,0.87,4.74

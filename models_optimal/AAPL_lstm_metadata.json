@@ -1,0 +1,1 @@
+{"window_size": 60, "epochs": 20, "batch_size": 64, "branch_model": false, "model_type": "lstm"}

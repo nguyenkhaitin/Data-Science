@@ -1,0 +1,386 @@
+/* Giao diện chung */
+body, .stApp {
+    background-color: #f0f8ff; 
+    color: #333333;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+/* Tiêu đề */
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+    font-weight: 600;
+}
+
+p, div {
+    color: #333333;
+}
+
+/* Sidebar Nền */
+[data-testid="stSidebar"] {
+    background-color: #E8FCFF !important;  /* Đặt màu nền sidebar */
+    background: #E8FCFF !important;        /* Loại bỏ gradient */
+    color: #333333;
+    border-right: none;
+    box-shadow: none;
+}
+
+/* Sidebar Tiêu đề */
+[data-testid="stSidebar"] h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff; /* Nếu muốn chữ màu xanh */
+    text-shadow: none;
+    text-transform: uppercase;
+    -webkit-text-fill-color: unset;
+}
+
+
+/* Icon Sidebar */
+.sidebar-icon {
+    font-size: 20px;
+    color: #007bff;
+}
+
+/* Metric Card */
+.metric-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.metric-label {
+    font-weight: 600;
+    font-size: 18px;
+    color: #333333;
+}
+
+.metric-value {
+    font-size: 26px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Giá tăng/giảm */
+.price-up { color: #4caf50; font-weight: bold; }
+.price-down { color: #f44336; font-weight: bold; }
+
+/* Nút Bấm */
+.analyze-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.analyze-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Bảng Dữ Liệu */
+thead tr th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px;
+}
+
+tbody tr td {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #e6f0ff;
+    transform: scale(1.01);
+    transition: transform 0.2s ease;
+}
+
+/* Tiêu đề */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Phần tiêu đề nhỏ */
+h3, .st-subheader {
+    color: #007bff;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/* Input Field */
+input[type="text"], .stTextInput > div > div > input, .stDateInput input {
+    background-color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Nút Phân Tích - Chữ To Đậm, Màu Nổi Bật */
+div.stButton > button {
+    background-color: #007bff !important;   /* Màu nền xanh dương sáng */
+    color: #0D47A1 !important;              /* Màu chữ xanh đậm */
+    font-size: 100px !important;             /* Chữ to hơn */
+    font-weight: 1000 !important;            /* Chữ đậm hơn */
+    padding: 18px 0 !important;
+    width: 100% !important;
+    border: none !important;
+    border-radius: 12px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.3) !important;
+    text-align: center !important;
+}
+
+div.stButton > button:hover {
+    background-color: #81D4FA !important;   /* Màu khi hover */
+    transform: scale(1.03) !important;
+}
+
+div.stButton > button:active {
+    background-color: #4FC3F7 !important;   /* Màu khi click */
+    transform: scale(0.98) !important;
+}
+
+/* Giúp chỉnh chữ trong nút PHÂN TÍCH */
+div.stButton > button p {
+    color: #ffffff !important;      /* Màu trắng hoặc màu khác nếu bạn muốn nổi bật */
+    font-size: 20px !important;     /* Cỡ chữ to hơn */
+    font-weight: bold !important;   /* In đậm */
+    text-align: center !important;
+    margin: 0 !important;
+}
+
+.metric-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Expander */
+.st-expander {
+    border: 2px solid #007bff !important; /* Viền xanh dương nổi bật */
+    border-radius: 12px !important;
+    background-color: #f0f8ff !important; /* Màu nền xanh nhạt */
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2) !important;
+    padding: 12px !important;
+    transition: all 0.3s ease;
+}
+
+/* Expander Header */
+.st-expanderHeader {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: #007bff !important; /* Màu chữ xanh nổi bật */
+    padding: 10px 0 !important;
+    transition: all 0.3s ease;
+}
+
+/* Khi Hover */
+.st-expanderHeader:hover {
+    color: #0056b3 !important;
+    transform: scale(1.02);
+}
+
+/* Khi đang mở */
+.st-expander.is-open .st-expanderHeader {
+    color: #ffffff !important;
+    background-color: #007bff !important;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Vùng chứa biểu đồ */
+.plot-container.plotly {
+    background-color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 30px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Tiêu đề & Trục biểu đồ */
+.plot-container .gtitle, 
+.plot-container .xtitle, 
+.plot-container .ytitle {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    fill: #1E90FF !important;
+    font-family: 'Poppins', 'Roboto', sans-serif !important;
+}
+
+/* Đường lưới nhẹ */
+.plot-container .gridlines line {
+    stroke: #e0e0e0 !important;
+    stroke-width: 1 !important;
+}
+
+/* Nổi bật các điểm dữ liệu */
+.plot-container .scatterlayer .point {
+    fill: #007bff !important;
+    stroke: #0056b3 !important;
+    stroke-width: 2 !important;
+}
+
+/* Chủ giải (Legend) */
+.plot-container .legend text {
+    fill: #1E90FF !important;  /* Màu giống Histogram giá đóng cửa */
+    font-weight: normal !important;  /* Bỏ in đậm */
+    font-size: 14px !important;
+    font-family: 'Poppins', 'Roboto', sans-serif !important;
+}
+.plot-container .legend text:hover {
+    fill: #0056b3 !important;  /* Màu đậm hơn khi hover */
+    cursor: pointer;
+}
+
+/* Tooltip Hover */
+.plotly-tooltip {
+    background-color: #007bff !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    padding: 8px 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* SVG Biểu Đồ */
+svg.main-svg {
+    width: 100% !important;
+    height: auto !important;
+    overflow: hidden !important;
+}
+
+/* Modebar */
+.js-plotly-plot .modebar {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    right: 20px !important;
+    top: 10px !important;
+}
+.js-plotly-plot:hover .modebar {
+    opacity: 1 !important;
+}
+.js-plotly-plot .modebar-btn {
+    color: #333333 !important;
+    opacity: 0.6 !important;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.js-plotly-plot .modebar-btn:hover {
+    opacity: 1 !important;
+    transform: scale(1.1);
+    color: #007bff !important;
+}
+.js-plotly-plot .modebar-btn.active {
+    color: #007bff !important;
+    opacity: 1 !important;
+}
+
+
+.stat-metric {
+    flex: 1 1 250px;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #ffffff; /* Nền trắng nổi bật */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-metric:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.stat-metric h4 {
+    color: #007bff;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stat-metric .value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1a73e8;
+    margin-bottom: 8px;
+}
+
+.stat-metric .description {
+    font-size: 14px;
+    color: #333333; /* Đổi từ #f0f0f0 sang #333 để dễ đọc */
+    margin-top: 8px;
+}
+
+
+
+
+/* Nền và màu số min/max đầu cuối */
+.st-emotion-cache-hpex6h {background: transparent !important; color: #1E90FF !important;}
+
+/* Đổi thanh active track từ đỏ sang xanh */
+div[style*="background-color: rgb(255, 74, 85)"] {background: #1E90FF !important;}
+
+/* Đổi màu chấm tròn slider thành xanh */
+[role="slider"] {background: #1E90FF !important; border-color: #1E90FF !important;}
+
+/* Đổi màu các số trên slider thành xanh */
+span, div[data-testid="stSliderValue"] {color: #1E90FF !important;}
+
+/* Đổi màu số trên chấm tròn slider thành xanh dương */
+.st-emotion-cache-b92z60 { color: #1E90FF !important; }
+
+/* Đổi màu chấm tròn slider thành xanh dương */
+[role="slider"] { background: #1E90FF !important; border-color: #1E90FF !important; }
+
+[data-baseweb="slider"] .st-at {
+    background: linear-gradient(
+        to right,
+        #e0e0e0 0%,
+        #e0e0e0 50%,
+        #e0e0e0 50%,
+        #e0e0e0 100%
+    ) !important;
+}
+
+
