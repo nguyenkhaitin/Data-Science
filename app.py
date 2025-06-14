@@ -1968,7 +1968,7 @@ def main():
         st.markdown("""
             <div style='text-align: center; margin-top: 40px; font-size: 20px; color: gray;'>
                 <em>Tính năng đang được phát triển – Coming Soon</em>
-            </div>str
+            </div>
         """, unsafe_allow_html=True)
 
 
